@@ -1,0 +1,6 @@
+[package]
+name = "richdb"
+version = "0.1.0"
+authors = ["Niklaus Zbinden <niklaus.zbinden@gmail.com>"]
+
+[dependencies]
