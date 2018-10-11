@@ -4,3 +4,23 @@ version = "0.1.0"
 authors = ["Niklaus Zbinden <niklaus.zbinden@gmail.com>"]
 
 [dependencies]
+rpds = "0.5.0"
+rocket = "0.3.17"
+rocket_codegen = "0.3.17"
+
+# The core APIs, including the Serialize and Deserialize traits. Always
+# required when using Serde.
+serde = "1.0"
+
+# Support for #[derive(Serialize, Deserialize)]. Required if you want Serde
+# to work for structs and enums defined in your crate.
+serde_derive = "1.0"
+
+# Each data format lives in its own crate; the sample code below uses JSON
+# but you may be using a different one.
+rmp-serde = "0.13.7"
+
+im = "12.1.0"
+
+[dependencies.rocksdb]
+git = "https://github.com/pingcap/rust-rocksdb.git"
